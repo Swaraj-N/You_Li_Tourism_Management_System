@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.TourishManagement.GenericUtilities.RetryAnalyzerToListener"/>
+    <listener class-name="org.TourishManagement.GenericUtilities.ListenerImplementation"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="org.testNGTourismManagementScriptsTest.CreateUserandCheckCountTest">
+        <methods>
+          <include name="methodSetup"/>
+          <include name="FirstScriptTest"/>
+          <include name="classSetup"/>
+          <include name="classTearDown"/>
+        </methods>
+      </class> <!-- org.testNGTourismManagementScriptsTest.CreateUserandCheckCountTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="3" parallel="tests" name="Test3(failed)">
+    <classes>
+      <class name="org.testNGTourismManagementScriptsTest.RaiseBookingasUserUpdateRemarkasAdminTest">
+        <methods>
+          <include name="methodSetup"/>
+          <include name="SecondScriptTest"/>
+          <include name="classSetup"/>
+          <include name="classTearDown"/>
+        </methods>
+      </class> <!-- org.testNGTourismManagementScriptsTest.RaiseBookingasUserUpdateRemarkasAdminTest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [Suite] -->

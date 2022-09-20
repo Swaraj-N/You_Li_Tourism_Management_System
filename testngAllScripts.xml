@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="org.TourishManagement.GenericUtilities.ListenerImplementation"></listener>
+<listener class-name="org.TourishManagement.GenericUtilities.RetryAnalyzerToListener"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="org.testNGTourismManagementScriptsTest.MakeEnquiryAndReaditAsAdminTest"/>
+      <class name="org.testNGTourismManagementScriptsTest.CreatePackageAndCheckCountTest"/>
+      <class name="org.testNGTourismManagementScriptsTest.RaiseBookingasUserUpdateRemarkasAdminTest"/>
+      <class name="org.testNGTourismManagementScriptsTest.BookaPackageAndCheckCountTest"/>
+      <class name="org.testNGTourismManagementScriptsTest.CreateUserandCheckCountTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
